@@ -4,7 +4,12 @@ using System.Text;
 
 namespace RecipeDomain
 {
-    class IncredientMacros
+    public class IncredientMacros
     {
+        private double Id { get; set; }
+        private double Energy { get; set; }
+        private double Protein { get; set; }
+        private double CarbonHydrates { get; set; }
+        private double Fat { get; set; }
     }
 }
