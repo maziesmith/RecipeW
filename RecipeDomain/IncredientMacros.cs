@@ -6,7 +6,7 @@ namespace RecipeDomain
 {
     public class IncredientMacros
     {
-        private double Id { get; set; }
+        private long Id { get; set; }
         private double Energy { get; set; }
         private double Protein { get; set; }
         private double CarbonHydrates { get; set; }
