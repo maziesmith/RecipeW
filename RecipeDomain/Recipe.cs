@@ -10,6 +10,8 @@ namespace RecipeDomain
         private long Id { get; set; }
         private String Name { get; set; }
         private List<RecipeItem> recipeItems { get; set; }
-        private Meal Meal { get; set; }
+        private byte[] RecipeImage { get; set; }
+        
+
     }
 }

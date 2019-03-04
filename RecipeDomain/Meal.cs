@@ -9,10 +9,10 @@ namespace RecipeDomain
         
         private long Id { get; set; }
         private String Name { get; set; }
-        private List<Recipe> recipes { get; set; }
-
-        private double quantity { get; set; }
-        private DateTime timeStamp { get; set; }
+        private List<Recipe> Recipes { get; set; }
+        private double Quantity { get; set; }
+        private String QunatityUnit { get; set; }
+        private DateTime TimeStamp { get; set; }
 
     }
 }
