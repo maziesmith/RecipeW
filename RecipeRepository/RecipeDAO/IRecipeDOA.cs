@@ -9,7 +9,7 @@ namespace RecipeRepository
         T Add(T obj);
         T getByName(String Name);
         T getById(double Id);
-        List<T> GetListOf(T obj);
+        List<T> GetListOf();
         int Remove(T obj);
 
     }

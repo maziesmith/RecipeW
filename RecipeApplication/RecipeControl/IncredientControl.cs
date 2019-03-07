@@ -2,28 +2,41 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using RecipeRepository.RecipeProvider;
 
 namespace RecipeApplication.RecipeControl
 {
     class IncredientControl
     {
+        private IncredientProvider provider;
+        IncredientControl()
+        {
+            provider = new IncredientProvider();
+        }
         public Incredient Add(Incredient newInc)
         {
-            Incredient inc = new Incredient();
-
+            Incredient inc = null;
+            if (newInc != null)
+            {
+                inc = provider.SaveIngredient(newInc);
+            }
             return inc;
         }
 
         public List<Incredient> getListOff()
         {
-            List<Incredient> incs = new List<Incredient>();
+
+            List<Incredient> incs = provider.GetListOf();
 
             return incs;
 
         }
         public Incredient FetchByName(String name)
         {
-            Incredient inc = new Incredient();
+            Incredient inc; 
+            if (name != "") & (name != null){
+                inc = provider.
+            }
 
             return inc;
         }

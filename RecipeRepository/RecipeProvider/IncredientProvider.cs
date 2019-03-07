@@ -1,8 +1,9 @@
 ﻿using RecipeDomain;
 using RecipeRepository.RecipeDAO;
 using System;
+using System.Collections.Generic;
 
-namespace RecipeRepository
+namespace RecipeRepository.RecipeProvider
 {
     public class IncredientProvider
     {
@@ -26,6 +27,27 @@ namespace RecipeRepository
             }
 
             return NewInc;
+        }
+        public List<Incredient> GetListOf()
+        {
+            List<Incredient> Incredients = IncDAO.GetListOf();
+            return Incredients;
+        }
+
+        public Incredient GetByName(String name)
+        {
+            Incredient fetchedInc;
+            try
+            {
+                fetchedInc = IncDAO.getByName(name);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return fetchedInc; 
+
         }
     }
 }

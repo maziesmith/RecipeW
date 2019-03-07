@@ -22,7 +22,7 @@ namespace RecipeRepository.RecipeDAO
             throw new NotImplementedException();
         }
 
-        public List<Incredient> GetListOf(Incredient obj)
+        public List<Incredient> GetListOf()
         {
             throw new NotImplementedException();
         }
