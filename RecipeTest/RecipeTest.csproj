@@ -15,4 +15,7 @@
   <ItemGroup>
     <Folder Include="RecipeApplicationTest\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeApplication\RecipeApplication.csproj" />
+  </ItemGroup>
 </Project>

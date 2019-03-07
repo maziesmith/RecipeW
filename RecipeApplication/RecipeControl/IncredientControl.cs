@@ -6,7 +6,7 @@ using RecipeRepository.RecipeProvider;
 
 namespace RecipeApplication.RecipeControl
 {
-    class IncredientControl
+    public class IncredientControl
     {
         private IncredientProvider provider;
         IncredientControl()
