@@ -1,34 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using RecipeDomain;
 
 namespace RecipeRepository.RecipeDAO
+
 {
-    public class IncredientDOA : IRecipeDOA<Incredient>
+    public class RecipeDAO : IRecipeDOA<Recipe>
     {
-        public Incredient Add(Incredient obj)
+        public RecipeDAO()
         {
-
-            throw new NotImplementedException();
         }
 
-        public Incredient getById(double Id)
+        public Recipe Add(Recipe obj)
         {
             throw new NotImplementedException();
         }
 
-        public Incredient getByName(string Name)
+        public Recipe getById(double Id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Incredient> GetListOf()
+        public Recipe getByName(string Name)
         {
             throw new NotImplementedException();
         }
 
-        public int Remove(Incredient obj)
+        public List<Recipe> GetListOf()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Remove(Recipe obj)
         {
             throw new NotImplementedException();
         }

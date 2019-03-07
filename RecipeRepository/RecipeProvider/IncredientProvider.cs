@@ -49,5 +49,21 @@ namespace RecipeRepository.RecipeProvider
             return fetchedInc; 
 
         }
+
+        public Incredient GetManufacture(String Manufacture)
+        {
+            Incredient fetchedInc;
+            try
+            {
+                fetchedInc = IncDAO.getByName(Manufacture);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return fetchedInc;
+
+        }
     }
 }

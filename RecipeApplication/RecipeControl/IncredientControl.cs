@@ -33,17 +33,42 @@ namespace RecipeApplication.RecipeControl
         }
         public Incredient FetchByName(String name)
         {
-            Incredient inc; 
-            if (name != "") & (name != null){
-                inc = provider.
+            Incredient inc=null;
+
+            try
+            {
+                if ((name != "") & (name != null))
+                {
+                    inc = provider.GetByName(name);
+
+                }
             }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+                       
 
             return inc;
         }
 
         public Incredient FetchByManufacture(String manufacture)
         {
-            Incredient inc = new Incredient();
+            Incredient inc = null;
+
+            try
+            {
+                if ((manufacture != "") & (manufacture != null))
+                {
+                    inc = provider.GetManufacture(manufacture);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+
 
             return inc;
         }
